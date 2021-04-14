@@ -9,7 +9,8 @@ import java.util.Set;
 
 @Repository
 public interface CancionRepository extends CrudRepository<Cancion, Integer> {
-//
-//    Set<Cancion> findAll();
-//    Set<Cancion> findByCantante(Cantante cantante);
+
+    Set<Cancion> findAll();
+
+    Cancion findById(int id);
 }

@@ -10,5 +10,7 @@ import java.util.Set;
 @Repository
 public interface DiscoRepository extends CrudRepository<Disco, Integer> {
 
-//    Set<Disco> findAll();
+    Set<Disco> findAll();
+
+    Disco findById(int id);
 }

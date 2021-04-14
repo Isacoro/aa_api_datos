@@ -7,7 +7,17 @@ import java.util.Set;
 
 public interface CancionService {
 
-//    //Consulta
-//    Set<Cancion> findAll();
-//    Set<Cancion> findByCantante(Cantante cantante);
+    //Consultar
+    Set<Cancion> findAll();
+    Cancion findById(int id);
+
+    //Crear
+    Cancion nuevaCancion(Cancion cancion);
+
+    //Modificar
+    Cancion modificarCancion(int id, Cancion nuevaCancion);
+
+    //Borrar
+    void borrarCancion(int id);
+
 }

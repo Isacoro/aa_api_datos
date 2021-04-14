@@ -11,5 +11,7 @@ import java.util.Set;
 @Repository
 public interface CantanteRepository extends CrudRepository<Cantante, Integer> {
 
-//    Set<Cantante> findAll();
+    Set<Cantante> findAll();
+
+    Cantante findById(int id);
 }
