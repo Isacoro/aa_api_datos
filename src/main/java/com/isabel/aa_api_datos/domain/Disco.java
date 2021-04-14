@@ -1,6 +1,8 @@
 package com.isabel.aa_api_datos.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,6 +27,7 @@ public class Disco {
     @Column
     private boolean premiado;
     @Column(name ="fecha_salida")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate fechaSalida;
     @Column
     private float precio;
@@ -38,7 +41,8 @@ public class Disco {
 
     //1 Disco N Canciones
     @OneToMany(mappedBy = "disco")
-    private List<Cancion> listaCanciones;
+    @JsonBackReference
+    private List<Cancion> canciones;
 
 
 }

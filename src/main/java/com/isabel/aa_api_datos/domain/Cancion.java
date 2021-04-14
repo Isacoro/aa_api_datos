@@ -1,6 +1,7 @@
 package com.isabel.aa_api_datos.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,6 +26,7 @@ public class Cancion {
     @Column
     private boolean top10;
     @Column(name = "fecha_salida")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate fechaSalida;
     @Column(name = "numero_descargas")
     private int numDescargas;

@@ -1,6 +1,7 @@
 package com.isabel.aa_api_datos.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,9 +25,12 @@ public class Concierto {
     @Column
     private boolean celebrado;
     @Column
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate fecha;
     @Column
     private float precio;
+    @Column
+    private String recinto;
     @Column
     private int aforo;
 
