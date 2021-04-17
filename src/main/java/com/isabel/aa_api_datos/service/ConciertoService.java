@@ -1,22 +1,23 @@
 package com.isabel.aa_api_datos.service;
 
-import com.isabel.aa_api_datos.domain.Cancion;
 import com.isabel.aa_api_datos.domain.Concierto;
 
+import java.util.Optional;
 import java.util.Set;
 
 public interface ConciertoService {
 
     //Consultar
     Set<Concierto> findAll();
-    Concierto findById(int id);
+
+    Optional<Concierto> findConciertoById(long id);
 
     //Crear
-    Concierto nuevoConcierto(Concierto concierto);
+    Concierto addConcierto(Concierto concierto);
 
     //Modificar
-    Concierto modificarConcierto(int id, Concierto nuevoConcierto);
+    Concierto modifyConcierto(long id, Concierto nuevoConcierto);
 
     //Borrar
-    void borrarConcierto(int id);
+    void deleteConcierto(long id);
 }

@@ -7,9 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Set;
 
 @Repository
-public interface ConciertoRepository extends CrudRepository<Concierto, Integer> {
+public interface ConciertoRepository extends CrudRepository<Concierto, Long> {
 
     Set<Concierto> findAll();
-
-    Concierto findById(int id);
 }

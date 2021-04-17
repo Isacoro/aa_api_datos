@@ -1,22 +1,23 @@
 package com.isabel.aa_api_datos.service;
 
-import com.isabel.aa_api_datos.domain.Cancion;
 import com.isabel.aa_api_datos.domain.Disco;
 
+import java.util.Optional;
 import java.util.Set;
 
 public interface DiscoService {
 
     //Consultar
     Set<Disco> findAll();
-    Disco findById(int id);
+
+    Optional<Disco> findDiscoById(long id);
 
     //Crear
-    Disco nuevoDisco(Disco disco);
+    Disco addDisco(Disco disco);
 
     //Modificar
-    Disco modificarDisco(int id, Disco nuevoDisco);
+    Disco modifyDisco(long id, Disco nuevoDisco);
 
     //Borrar
-    void borrarDisco(int id);
+    void deleteDisco(long id);
 }

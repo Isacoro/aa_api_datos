@@ -9,9 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Set;
 
 @Repository
-public interface CantanteRepository extends CrudRepository<Cantante, Integer> {
+public interface CantanteRepository extends CrudRepository<Cantante, Long> {
 
     Set<Cantante> findAll();
-
-    Cantante findById(int id);
 }

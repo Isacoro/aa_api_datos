@@ -1,0 +1,39 @@
+2021-04-15 19:57:29,758 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 22532 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-15 19:57:29,758 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-15 19:57:30,357 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-15 19:57:30,417 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2021-04-15 19:57:31,012 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-15 19:57:31,022 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-15 19:57:31,022 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-15 19:57:31,022 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-15 19:57:31,097 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-15 19:57:31,097 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1300 ms
+2021-04-15 19:57:31,247 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-15 19:57:31,282 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-15 19:57:31,373 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-15 19:57:31,444 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-15 19:57:31,574 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-15 19:57:31,596 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-15 19:57:32,127 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-15 19:57:32,137 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-15 19:57:32,457 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-15 19:57:32,512 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-15 19:57:32,942 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-04-15 19:57:33,042 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-15 19:57:33,057 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-15 19:57:33,067 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.702 seconds (JVM running for 4.072)
+2021-04-15 19:58:00,951 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-15 19:58:00,952 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-15 19:58:00,954 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2021-04-15 19:58:00,984 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-1] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.isabel.aa_api_datos.domain.Cancion> com.isabel.aa_api_datos.controller.CancionController.modifyCancion(int,com.isabel.aa_api_datos.domain.Cancion)]
+2021-04-15 19:58:22,156 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-4] Inicio getCanciones
+2021-04-15 19:58:22,304 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-4] Fin getCanciones
+2021-04-15 19:58:30,626 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-5] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-04-15 19:59:08,611 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2021-04-15 20:01:03,573 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-10] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2021-04-15 20:02:16,410 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-04-15 20:03:40,470 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-04-15 20:05:43,528 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-10] Inicio getCanciones
+2021-04-15 20:05:43,543 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-10] Fin getCanciones
+2021-04-15 20:07:33,855 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Inicio getCanciones
+2021-04-15 20:07:33,868 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Fin getCanciones

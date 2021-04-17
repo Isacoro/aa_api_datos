@@ -1,10 +1,13 @@
 package com.isabel.aa_api_datos.service;
 
 import com.isabel.aa_api_datos.domain.Cantante;
+import com.isabel.aa_api_datos.domain.dto.CantanteDTO;
+import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.repository.CantanteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
 import java.util.Set;
 
 @Service
@@ -13,33 +16,38 @@ public class CantanteServiceImpl implements CantanteService {
     @Autowired
     private CantanteRepository cantanteRepository;
 
-
-
+    //Buscar todos
     @Override
     public Set<Cantante> findAll() {
         return cantanteRepository.findAll();
     }
 
+    //Búsqueda id
     @Override
-    public Cantante findById(int id) {
+    public Optional<Cantante> findCantanteById(long id) {
         return cantanteRepository.findById(id);
     }
 
+    //Crear
     @Override
-    public Cantante nuevoCantante(Cantante cantante) {
+    public Cantante addCantante(Cantante cantante) {
         return cantanteRepository.save(cantante);
     }
 
+    //Modificar
     @Override
-    public Cantante modificarCantante(int id, Cantante nuevoCantante) {
-        Cantante cantante = cantanteRepository.findById(id);
+    public Cantante modifyCantante(long id, Cantante nuevoCantante) {
+        Cantante cantante = cantanteRepository.findById(id)
+                .orElseThrow(() -> new CantanteNotFoundException(id));
         nuevoCantante.setId(cantante.getId());
         return cantanteRepository.save(nuevoCantante);
     }
 
+    //Borrar
     @Override
-    public void borrarCantante(int id) {
-        cantanteRepository.findById(id);
+    public void deleteCantante(long id) {
+        cantanteRepository.findById(id)
+                .orElseThrow(() -> new CantanteNotFoundException(id));
         cantanteRepository.deleteById(id);
 
     }

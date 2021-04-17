@@ -9,17 +9,17 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DocApiMusic {
-//
-//    @Bean
-//    public OpenAPI customOpenAPI (){
-//        return new OpenAPI()
-//            .components(new Components())
-//            .info(new Info().title("API Música")
-//                    .description("Documentación de la API")
-//                    .contact(new Contact()
-//                    .name("Isabel Cortés")
-//                    .email("isabel@apimusic.com")
-//                    .url("https://apimusic.com"))
-//            .version("1.0"));
-//    }
+
+    @Bean
+    public OpenAPI customOpenAPI (){
+        return new OpenAPI()
+            .components(new Components())
+            .info(new Info().title("API Música")
+                    .description("Documentación de la API")
+                    .contact(new Contact()
+                    .name("Isabel Cortés")
+                    .email("isabel@apimusic.com")
+                    .url("https://apimusic.com"))
+            .version("1.0"));
+    }
 }
