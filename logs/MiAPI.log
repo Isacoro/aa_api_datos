@@ -8928,3 +8928,31 @@ com.isabel.aa_api_datos.exception.CantanteNotFoundException: Cantante Not Found:
 2021-04-17 20:05:29,813 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-7] Eliminada canción
 2021-04-17 20:06:53,730 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-10] Inicio añadir canción
 2021-04-17 20:06:53,735 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-10] Añadida canción
+2021-04-17 20:07:05,149 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 17864 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-17 20:07:05,151 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-17 20:07:05,740 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-17 20:07:05,793 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2021-04-17 20:07:06,365 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-17 20:07:06,373 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-17 20:07:06,373 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-17 20:07:06,373 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-17 20:07:06,454 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-17 20:07:06,454 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1266 ms
+2021-04-17 20:07:06,592 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-17 20:07:06,629 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-17 20:07:06,720 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-17 20:07:06,791 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-17 20:07:06,918 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-17 20:07:06,939 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-17 20:07:07,456 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-17 20:07:07,462 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-17 20:07:07,803 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-17 20:07:07,859 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-17 20:07:08,356 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-17 20:07:08,373 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-17 20:07:08,379 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.613 seconds (JVM running for 3.969)
+2021-04-17 20:07:12,470 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-17 20:07:12,471 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-17 20:07:12,471 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 0 ms
+2021-04-17 20:07:12,492 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-1] Inicio eliminar canción
+2021-04-17 20:07:12,550 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-1] Eliminada canción

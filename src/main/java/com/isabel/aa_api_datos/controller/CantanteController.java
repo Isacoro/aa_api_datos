@@ -1,7 +1,6 @@
 package com.isabel.aa_api_datos.controller;
 
 import com.isabel.aa_api_datos.domain.Cantante;
-import com.isabel.aa_api_datos.domain.dto.CantanteDTO;
 import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.service.CantanteService;
 import io.swagger.v3.oas.annotations.Operation;

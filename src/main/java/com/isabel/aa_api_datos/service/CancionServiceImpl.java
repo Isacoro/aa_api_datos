@@ -2,7 +2,6 @@ package com.isabel.aa_api_datos.service;
 
 import com.isabel.aa_api_datos.domain.Cancion;
 import com.isabel.aa_api_datos.exception.CancionNotFoundException;
-import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.repository.CancionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,11 +16,11 @@ public class CancionServiceImpl implements CancionService{
     private CancionRepository cancionRepository;
 
 
+
     @Override
     public Set<Cancion> findAll() {
         return cancionRepository.findAll();
     }
-
 
     @Override
     public Optional<Cancion> findCancionById(long id) {

@@ -2,7 +2,6 @@ package com.isabel.aa_api_datos.controller;
 
 import com.isabel.aa_api_datos.domain.Cancion;
 import com.isabel.aa_api_datos.exception.CancionNotFoundException;
-import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.service.CancionService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
