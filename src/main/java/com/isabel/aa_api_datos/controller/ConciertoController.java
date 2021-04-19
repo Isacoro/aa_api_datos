@@ -1,6 +1,7 @@
 package com.isabel.aa_api_datos.controller;
 
 import com.isabel.aa_api_datos.domain.Concierto;
+import com.isabel.aa_api_datos.domain.dto.ConciertoDTO;
 import com.isabel.aa_api_datos.exception.ConciertoNotFoundException;
 import com.isabel.aa_api_datos.service.ConciertoService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -49,11 +50,11 @@ public class ConciertoController {
     })
     //Añadir concierto
     @PostMapping(value = "/conciertos", produces = "application/json", consumes = "application/json")
-    public ResponseEntity<Concierto> addConcierto(@RequestBody Concierto concierto){
+    public ResponseEntity<Concierto> addConcierto(@RequestBody ConciertoDTO conciertoDTO){
         logger.info("Inicio añadir concierto");
-        Concierto addedConcierto = conciertoService.addConcierto(concierto);
+        Concierto addedConcierto = conciertoService.addConcierto(conciertoDTO);
         logger.info("Añadido concierto");
-        return new ResponseEntity<>(addedConcierto, HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED).body(addedConcierto);
     }
 
 

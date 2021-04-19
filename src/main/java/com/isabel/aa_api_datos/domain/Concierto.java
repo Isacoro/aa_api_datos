@@ -23,15 +23,15 @@ public class Concierto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Schema(description = "Localidad dónde se celebra", example = "Zaragoza")
+    @Schema(description = "Localidad donde se celebra", example = "Zaragoza")
     @Column
     private String localidad;
     @Schema(description = "Ya se ha celebrado o no", example = "true")
     @Column
     private boolean celebrado;
-    @Schema(description = "Fecha del concierto", example = "2021-06-12")
+    @Schema(description = "Fecha del concierto", example = "12-06-2021")
     @Column
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fecha;
     @Schema(description = "Precio de la entrada", example = "35.95")
     @Column
@@ -46,6 +46,6 @@ public class Concierto {
     //N Conciertos 1 Cantante
     @ManyToOne
     @JoinColumn(name = "cantante_id")
-    @JsonBackReference
+    @JsonBackReference(value = "cantante")
     private Cantante cantante;
 }

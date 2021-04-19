@@ -11,6 +11,6 @@ public class ConciertoNotFoundException extends RuntimeException {
     }
 
     public ConciertoNotFoundException(long id){
-        super("Canción Not Found: " + id);
+        super("Concierto Not Found: " + id);
     }
 }

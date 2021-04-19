@@ -31,9 +31,9 @@ public class Cancion {
     @Schema(description = "Si ha estado en el top10", example = "true")
     @Column
     private boolean top10;
-    @Schema(description = "Fecha de lanzamiento", example = "2020-05-17")
+    @Schema(description = "Fecha de lanzamiento", example = "17-05-2020")
     @Column(name = "fecha_salida")
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaSalida;
     @Schema(description = "Número de descargas", example = "120300")
     @Column(name = "numero_descargas")
@@ -45,7 +45,7 @@ public class Cancion {
     //N Canciones 1 Disco
     @ManyToOne
     @JoinColumn(name = "disco_id")
-    @JsonBackReference
+    @JsonBackReference(value = "disco")
     private Disco disco;
 
 }

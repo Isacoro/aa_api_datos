@@ -42,6 +42,20 @@ public class CantanteController {
         return new ResponseEntity<>(cantantes, HttpStatus.OK);
     }
 
+//    //Cantantes por nombre
+//    @Operation(summary = "Obtener el listado de las cantantes por nombre")
+//    @ApiResponses(value = {
+//            @ApiResponse(responseCode = "200", description = "Listado de cantantes por nombre", content = @Content(schema = @Schema(implementation = Cantante.class)))
+//    })
+//    @GetMapping(value = "/cantantes/nombre", produces = "application/json")
+//    public ResponseEntity<Cantante> getCantantesByName(@RequestParam(value = "nombre", defaultValue = "") String name){
+//        logger.info("Inicio getCantantesByName");
+//        Cantante cantante = cantanteService.findByName(name);
+//        logger.info("Fin getCantantesByName");
+//        return ResponseEntity.status(HttpStatus.OK).body(cantante);
+//    }
+
+
 
     @Operation(summary = "Registrar una cantante")
     @ApiResponses(value = {

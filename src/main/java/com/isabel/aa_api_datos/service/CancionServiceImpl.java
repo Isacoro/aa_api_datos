@@ -1,8 +1,12 @@
 package com.isabel.aa_api_datos.service;
 
 import com.isabel.aa_api_datos.domain.Cancion;
+import com.isabel.aa_api_datos.domain.Disco;
+import com.isabel.aa_api_datos.domain.dto.CancionDTO;
 import com.isabel.aa_api_datos.exception.CancionNotFoundException;
+import com.isabel.aa_api_datos.exception.DiscoNotFoundException;
 import com.isabel.aa_api_datos.repository.CancionRepository;
+import com.isabel.aa_api_datos.repository.DiscoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +18,9 @@ public class CancionServiceImpl implements CancionService{
 
     @Autowired
     private CancionRepository cancionRepository;
+
+    @Autowired
+    private DiscoRepository discoRepository;
 
 
 
@@ -28,9 +35,16 @@ public class CancionServiceImpl implements CancionService{
     }
 
     @Override
-    public Cancion addCancion(Cancion cancion) {
-        return cancionRepository.save(cancion);
+    public Cancion addCancion(CancionDTO cancionDTO) {
+        Disco disco = discoRepository.findById(cancionDTO.getDisco_id())
+                .orElseThrow(() -> new DiscoNotFoundException("Disco no encontrado"));
+        Cancion nuevaCancion = new Cancion();
+        nuevaCancion.setTitulo(cancionDTO.getTitulo());
+        nuevaCancion.setDuracion(cancionDTO.getDuracion());
+        nuevaCancion.setDisco(disco);
+        return cancionRepository.save(nuevaCancion);
     }
+
 
     @Override
     public Cancion modifyCancion(long id, Cancion nuevaCancion) {

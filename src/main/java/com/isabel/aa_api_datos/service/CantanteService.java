@@ -1,8 +1,6 @@
 package com.isabel.aa_api_datos.service;
 
-import com.isabel.aa_api_datos.domain.Cancion;
 import com.isabel.aa_api_datos.domain.Cantante;
-import com.isabel.aa_api_datos.domain.dto.CantanteDTO;
 
 import java.util.Optional;
 import java.util.Set;
@@ -12,6 +10,7 @@ public interface CantanteService {
     //Consultar
     Set<Cantante> findAll();
     Optional<Cantante> findCantanteById(long id);
+//    Cantante findByName (String name);
 
     //Crear
     Cantante addCantante(Cantante cantante);

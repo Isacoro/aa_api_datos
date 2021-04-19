@@ -35,9 +35,9 @@ public class Cantante {
     @Schema(description = "Cantante en activo", example = "false")
     @Column
     private boolean activo;
-    @Schema(description = "Fecha de nacimiento del cantante", example = "1982-03-22")
+    @Schema(description = "Fecha de nacimiento del cantante", example = "22-03-1982")
     @Column(name = "fecha_nacimiento")
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaNacimiento;
     @Schema(description = "Años en activo del cantante", example = "15")
     @Column(name = "anos_activo")

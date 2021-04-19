@@ -1,6 +1,7 @@
 package com.isabel.aa_api_datos.service;
 
 import com.isabel.aa_api_datos.domain.Concierto;
+import com.isabel.aa_api_datos.domain.dto.ConciertoDTO;
 
 import java.util.Optional;
 import java.util.Set;
@@ -13,7 +14,7 @@ public interface ConciertoService {
     Optional<Concierto> findConciertoById(long id);
 
     //Crear
-    Concierto addConcierto(Concierto concierto);
+    Concierto addConcierto(ConciertoDTO conciertoDTO);
 
     //Modificar
     Concierto modifyConcierto(long id, Concierto nuevoConcierto);

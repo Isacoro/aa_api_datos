@@ -11,9 +11,6 @@ import java.time.LocalDate;
 public class CancionDTO {
 
     private String titulo;
-    private boolean top10;
-    @JsonFormat(pattern = "yyyy/MM/dd")
-    private LocalDate fechaSalida;
-    private long numDescargas;
+    private float duracion;
     private long disco_id;
 }

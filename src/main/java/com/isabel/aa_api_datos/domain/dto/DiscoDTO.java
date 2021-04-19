@@ -11,9 +11,8 @@ import java.time.LocalDate;
 public class DiscoDTO {
 
     private String nombre;
-    private boolean premiado;
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaSalida;
     private float precio;
-    private long numVentas;
+    private long cantante_id;
 }

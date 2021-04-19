@@ -33,9 +33,9 @@ public class Disco {
     @Schema(description = "Disco premiado o no", example = "true")
     @Column
     private boolean premiado;
-    @Schema(description = "Fecha que sale a la venta", example = "1986-10-09")
+    @Schema(description = "Fecha que sale a la venta", example = "27-02-1974")
     @Column(name ="fecha_salida")
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaSalida;
     @Schema(description = "Precio de venta", example = "30.99")
     @Column
@@ -47,7 +47,7 @@ public class Disco {
     //N Discos 1 Cantante
     @ManyToOne
     @JoinColumn(name = "cantante_id")
-    @JsonBackReference
+    @JsonBackReference(value = "cantante")
     private Cantante cantante;
 
     //1 Disco N Canciones

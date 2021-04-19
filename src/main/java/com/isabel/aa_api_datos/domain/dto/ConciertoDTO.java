@@ -11,8 +11,7 @@ import java.time.LocalDate;
 public class ConciertoDTO {
 
     private String localidad;
-    private boolean celebrado;
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fecha;
     private float precio;
     private String recinto;

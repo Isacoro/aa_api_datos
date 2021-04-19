@@ -1,6 +1,7 @@
 package com.isabel.aa_api_datos.controller;
 
 import com.isabel.aa_api_datos.domain.Disco;
+import com.isabel.aa_api_datos.domain.dto.DiscoDTO;
 import com.isabel.aa_api_datos.exception.DiscoNotFoundException;
 import com.isabel.aa_api_datos.service.DiscoService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -49,11 +50,11 @@ public class DiscoController {
     })
     //Añadir disco
     @PostMapping(value = "/discos", produces = "application/json", consumes = "application/json")
-    public ResponseEntity<Disco> addDisco(@RequestBody Disco disco){
+    public ResponseEntity<Disco> addDisco(@RequestBody DiscoDTO discoDTO){
         logger.info("Inicio añadir disco");
-        Disco addedDisco = discoService.addDisco(disco);
+        Disco addedDisco = discoService.addDisco(discoDTO);
         logger.info("Añadido disco");
-        return new ResponseEntity<>(addedDisco, HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED).body(addedDisco);
     }
 
 

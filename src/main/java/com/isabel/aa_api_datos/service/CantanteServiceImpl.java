@@ -1,7 +1,6 @@
 package com.isabel.aa_api_datos.service;
 
 import com.isabel.aa_api_datos.domain.Cantante;
-import com.isabel.aa_api_datos.domain.dto.CantanteDTO;
 import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.repository.CantanteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +26,13 @@ public class CantanteServiceImpl implements CantanteService {
     public Optional<Cantante> findCantanteById(long id) {
         return cantanteRepository.findById(id);
     }
+
+//    //Búsqueda por nombre
+//    @Override
+//    public Cantante findByName(String name) {
+//        return cantanteRepository.findByName(name);
+//    }
+
 
     //Crear
     @Override
