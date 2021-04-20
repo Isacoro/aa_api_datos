@@ -13,6 +13,8 @@ public interface ConciertoService {
 
     Optional<Concierto> findConciertoById(long id);
 
+    Set<Concierto> findByLocalidadAndCelebradoAndPrecio(String localidad, boolean celebrado, float precio);
+
     //Crear
     Concierto addConcierto(ConciertoDTO conciertoDTO);
 

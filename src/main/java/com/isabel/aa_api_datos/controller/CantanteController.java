@@ -42,18 +42,21 @@ public class CantanteController {
         return new ResponseEntity<>(cantantes, HttpStatus.OK);
     }
 
-//    //Cantantes por nombre
-//    @Operation(summary = "Obtener el listado de las cantantes por nombre")
-//    @ApiResponses(value = {
-//            @ApiResponse(responseCode = "200", description = "Listado de cantantes por nombre", content = @Content(schema = @Schema(implementation = Cantante.class)))
-//    })
-//    @GetMapping(value = "/cantantes/nombre", produces = "application/json")
-//    public ResponseEntity<Cantante> getCantantesByName(@RequestParam(value = "nombre", defaultValue = "") String name){
-//        logger.info("Inicio getCantantesByName");
-//        Cantante cantante = cantanteService.findByName(name);
-//        logger.info("Fin getCantantesByName");
-//        return ResponseEntity.status(HttpStatus.OK).body(cantante);
-//    }
+    //Cantantes por nombre, nacionalidad y activo
+    @Operation(summary = "Obtener el listado de las cantantes por nombre, nacionalidad y activo")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Listado de cantantes por nombre, nacionalidad y activo", content = @Content(array = @ArraySchema (schema = @Schema(implementation = Cantante.class))))
+    })
+    @GetMapping(value = "/cantantes/nombre-nacionalidad-activo", produces = "application/json")
+    public ResponseEntity<Set<Cantante>> getCantantesByNombreNacionalidadActivo
+                                                    (@RequestParam(value = "nombre", defaultValue = "") String nombre,
+                                                    @RequestParam(value = "nacionalidad", defaultValue = "") String nacionalidad,
+                                                    @RequestParam(value = "activo", defaultValue = "") boolean activo){
+        logger.info("Inicio getCantantesByNombreNacionalidadActivo");
+        Set<Cantante> cantantes = cantanteService.findByNombreAndNacionalidadAndActivo(nombre, nacionalidad, activo);
+        logger.info("Fin getCantantesByNombreNacionalidadActivo");
+        return new ResponseEntity<>(cantantes, HttpStatus.OK);
+    }
 
 
 
@@ -67,7 +70,7 @@ public class CantanteController {
         logger.info("Inicio añadir cantante");
         Cantante addedCantante = cantanteService.addCantante(cantante);
         logger.info("Añadido cantante");
-        return new ResponseEntity<>(addedCantante, HttpStatus.CREATED);
+        return ResponseEntity.status(HttpStatus.CREATED).body(addedCantante);
     }
 
 

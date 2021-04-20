@@ -44,6 +44,24 @@ public class ConciertoController {
     }
 
 
+
+    @Operation(summary = "Obtener el listado de los conciertos por localidad, celebrado y precio")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Listado de conciertos por localidad, celebrado y precio", content = @Content(array = @ArraySchema(schema = @Schema(implementation = Concierto.class))))
+    })
+    //Todos los conciertos por localidad, celebrado y precio
+    @GetMapping(value = "/conciertos/localidad-celebrado-precio", produces = "application/json")
+    public ResponseEntity<Set<Concierto>> getConciertosByLocalidadCelebradoPrecio(
+                                                    @RequestParam(value = "localidad", defaultValue = "") String localidad,
+                                                    @RequestParam(value = "celebrado", defaultValue = "") boolean celebrado,
+                                                    @RequestParam(value = "precio", defaultValue = "") float precio){
+        logger.info("Inicio getConciertosByLocalidadCelebradoPrecio");
+        Set<Concierto> conciertos = conciertoService.findByLocalidadAndCelebradoAndPrecio(localidad, celebrado, precio);
+        logger.info("Fin getConciertosByLocalidadCelebradoPrecio");
+        return new ResponseEntity<>(conciertos, HttpStatus.OK);
+    }
+
+
     @Operation(summary = "Registrar un concierto")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Se registra el concierto", content = @Content(schema = @Schema(implementation = Concierto.class))),

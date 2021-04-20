@@ -10,7 +10,7 @@ public interface CantanteService {
     //Consultar
     Set<Cantante> findAll();
     Optional<Cantante> findCantanteById(long id);
-//    Cantante findByName (String name);
+    Set<Cantante> findByNombreAndNacionalidadAndActivo(String nombre, String nacionalidad, boolean activo);
 
     //Crear
     Cantante addCantante(Cantante cantante);

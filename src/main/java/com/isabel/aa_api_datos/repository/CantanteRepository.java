@@ -11,5 +11,5 @@ import java.util.Set;
 public interface CantanteRepository extends CrudRepository<Cantante, Long> {
 
     Set<Cantante> findAll();
-//    Cantante findByName (String name);
+    Set<Cantante> findByNombreAndNacionalidadAndActivo(String nombre, String nacionalidad, boolean activo);
 }

@@ -27,11 +27,10 @@ public class CantanteServiceImpl implements CantanteService {
         return cantanteRepository.findById(id);
     }
 
-//    //Búsqueda por nombre
-//    @Override
-//    public Cantante findByName(String name) {
-//        return cantanteRepository.findByName(name);
-//    }
+    @Override
+    public Set<Cantante> findByNombreAndNacionalidadAndActivo(String nombre, String nacionalidad, boolean activo) {
+        return cantanteRepository.findByNombreAndNacionalidadAndActivo(nombre, nacionalidad, activo);
+    }
 
 
     //Crear

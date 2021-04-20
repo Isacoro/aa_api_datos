@@ -35,6 +35,11 @@ public class ConciertoServiceImpl implements ConciertoService{
     }
 
     @Override
+    public Set<Concierto> findByLocalidadAndCelebradoAndPrecio(String localidad, boolean celebrado, float precio) {
+        return conciertoRepository.findByLocalidadAndCelebradoAndPrecio(localidad, celebrado, precio);
+    }
+
+    @Override
     public Concierto addConcierto(ConciertoDTO conciertoDTO) {
         Cantante cantante = cantanteRepository.findById(conciertoDTO.getCantante_id())
                 .orElseThrow(() -> new CantanteNotFoundException("Cantante no encontrado"));
