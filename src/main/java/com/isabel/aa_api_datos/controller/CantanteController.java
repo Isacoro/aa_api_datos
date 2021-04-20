@@ -1,6 +1,8 @@
 package com.isabel.aa_api_datos.controller;
 
+import com.isabel.aa_api_datos.domain.Cancion;
 import com.isabel.aa_api_datos.domain.Cantante;
+import com.isabel.aa_api_datos.exception.CancionNotFoundException;
 import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.service.CantanteService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -29,7 +31,7 @@ public class CantanteController {
     private final Logger logger = LoggerFactory.getLogger(CantanteController.class);
 
 
-    @Operation(summary = "Obtener el listado de las cantantes")
+    @Operation(summary = "Obtiene el listado de los cantantes")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Listado de cantantes", content = @Content(array = @ArraySchema(schema = @Schema(implementation = Cantante.class))))
     })
@@ -43,7 +45,7 @@ public class CantanteController {
     }
 
     //Cantantes por nombre, nacionalidad y activo
-    @Operation(summary = "Obtener el listado de las cantantes por nombre, nacionalidad y activo")
+    @Operation(summary = "Obtiene el listado de los cantantes por nombre, nacionalidad y activo")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Listado de cantantes por nombre, nacionalidad y activo", content = @Content(array = @ArraySchema (schema = @Schema(implementation = Cantante.class))))
     })
@@ -60,7 +62,7 @@ public class CantanteController {
 
 
 
-    @Operation(summary = "Registrar una cantante")
+    @Operation(summary = "Registra un cantante")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Se registra el cantante", content = @Content(schema = @Schema(implementation = Cantante.class))),
     })
@@ -75,7 +77,7 @@ public class CantanteController {
 
 
 
-    @Operation(summary = "Modificar un cantante")
+    @Operation(summary = "Modifica un cantante")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Se modifica el cantante", content = @Content(schema = @Schema(implementation = Cantante.class))),
             @ApiResponse(responseCode = "404", description = "El cantante no existe", content = @Content(schema = @Schema(implementation = Response.class)))
@@ -91,7 +93,7 @@ public class CantanteController {
 
 
 
-    @Operation(summary = "Eliminar un cantante")
+    @Operation(summary = "Elimina un cantante")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Se elimina el cantante", content = @Content(schema = @Schema(implementation = Response.class))),
             @ApiResponse(responseCode = "404", description = "El cantante no existe", content = @Content(schema = @Schema(implementation = Response.class)))
@@ -104,6 +106,27 @@ public class CantanteController {
         logger.info("Eliminado cantante");
         return new ResponseEntity<>(Response.noErrorResponse(), HttpStatus.OK);
     }
+
+
+    @Operation(summary = "Modifica los años activos")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Se modifica los años activos del cantante", content = @Content(schema = @Schema(implementation = Response.class))),
+            @ApiResponse(responseCode = "404", description = "El cantante no existe", content = @Content(schema = @Schema(implementation = Response.class)))
+    })
+    //Modificar los años activos del cantante
+    @PatchMapping(value = "/cantantes/{id}/change-anosActivo", produces = "application/json")
+    public ResponseEntity<Cantante> cambiaCantante(@PathVariable long id, @RequestBody int anosActivo){
+        logger.info("Inicio modificar años activo del cantante");
+        Cantante cantante = cantanteService.findCantanteById(id)
+                .orElseThrow(() -> new CantanteNotFoundException(id));
+        cantante.setAnosActivo(anosActivo);
+        cantanteService.modifyCantante(id, cantante);
+        logger.info("Fin modificado años activo cantante");
+        return new ResponseEntity<>(cantante, HttpStatus.OK);
+    }
+
+
+
 
     //Excepciones en caso de no encontrar el elemento
     @ExceptionHandler(CantanteNotFoundException.class)

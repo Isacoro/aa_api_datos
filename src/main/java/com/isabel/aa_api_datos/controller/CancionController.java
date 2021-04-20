@@ -30,7 +30,7 @@ public class CancionController {
     @Autowired
     public CancionService cancionService;
 
-   @Operation(summary = "Obtener el listado de las canciones")
+   @Operation(summary = "Obtiene el listado de las canciones")
    @ApiResponses(value = {
            @ApiResponse(responseCode = "200", description = "Listado de canciones", content = @Content(array = @ArraySchema(schema = @Schema(implementation = Cancion.class)))),
    })
@@ -44,7 +44,7 @@ public class CancionController {
     }
 
 
-    @Operation(summary = "Registrar una canción")
+    @Operation(summary = "Registra una canción")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Se registra la canción", content = @Content(schema = @Schema(implementation = Cancion.class)))
     })
@@ -59,7 +59,7 @@ public class CancionController {
 
 
 
-    @Operation(summary = "Modificar una canción")
+    @Operation(summary = "Modifica una canción")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Se modifica la canción", content = @Content(schema = @Schema(implementation = Cancion.class))),
             @ApiResponse(responseCode = "404", description = "La canción no existe", content = @Content(schema = @Schema(implementation = Response.class)))
@@ -75,7 +75,7 @@ public class CancionController {
 
 
 
-    @Operation(summary = "Eliminar una canción")
+    @Operation(summary = "Elimina una canción")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Se elimina la canción", content = @Content(schema = @Schema(implementation = Response.class))),
             @ApiResponse(responseCode = "404", description = "La canción no existe", content = @Content(schema = @Schema(implementation = Response.class)))
@@ -88,6 +88,26 @@ public class CancionController {
         logger.info("Eliminada canción");
         return new ResponseEntity<>(Response.noErrorResponse(), HttpStatus.OK);
     }
+
+
+    @Operation(summary = "Modifica el título de una cación")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Se modifica el título de la canción", content = @Content(schema = @Schema(implementation = Response.class))),
+            @ApiResponse(responseCode = "404", description = "La canción no existe", content = @Content(schema = @Schema(implementation = Response.class)))
+    })
+    //Modificar título de la canción
+    @PatchMapping(value = "/canciones/{id}/change-titulo", produces = "application/json")
+    public ResponseEntity<Cancion> cambiaCancion(@PathVariable long id, @RequestBody String titulo){
+        logger.info("Inicio modificar titulo de la canción");
+        Cancion cancion = cancionService.findCancionById(id)
+                .orElseThrow(() -> new CancionNotFoundException(id));
+        cancion.setTitulo(titulo);
+        cancionService.modifyCancion(id, cancion);
+        logger.info("Fin modificado título de canción");
+        return new ResponseEntity<>(cancion, HttpStatus.OK);
+    }
+
+
 
     //Excepciones en caso de no encontrar el elemento
     @ExceptionHandler(CancionNotFoundException.class)

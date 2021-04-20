@@ -41,7 +41,7 @@ public class Cantante {
     private LocalDate fechaNacimiento;
     @Schema(description = "Años en activo del cantante", example = "15")
     @Column(name = "anos_activo")
-    private float anosActivo;
+    private int anosActivo;
 
     //1 Cantante tiene N discos
     @OneToMany(mappedBy = "cantante")

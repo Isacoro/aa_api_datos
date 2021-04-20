@@ -1,7 +1,9 @@
 package com.isabel.aa_api_datos.controller;
 
+import com.isabel.aa_api_datos.domain.Cantante;
 import com.isabel.aa_api_datos.domain.Concierto;
 import com.isabel.aa_api_datos.domain.dto.ConciertoDTO;
+import com.isabel.aa_api_datos.exception.CantanteNotFoundException;
 import com.isabel.aa_api_datos.exception.ConciertoNotFoundException;
 import com.isabel.aa_api_datos.service.ConciertoService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -104,6 +106,27 @@ public class ConciertoController {
         logger.info("Eliminado concierto");
         return new ResponseEntity<>(Response.noErrorResponse(), HttpStatus.OK);
     }
+
+
+    @Operation(summary = "Modifica el aforo")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Se modifica el aforo del concierto", content = @Content(schema = @Schema(implementation = Response.class))),
+            @ApiResponse(responseCode = "404", description = "El concierto no existe", content = @Content(schema = @Schema(implementation = Response.class)))
+    })
+    //Modificar el aforo del concierto
+    @PatchMapping(value = "/conciertos/{id}/change-aforo", produces = "application/json")
+    public ResponseEntity<Concierto> cambiaConcierto(@PathVariable long id, @RequestBody long aforo){
+        logger.info("Inicio modificar aforo del concierto");
+        Concierto concierto = conciertoService.findConciertoById(id)
+                .orElseThrow(() -> new ConciertoNotFoundException(id));
+        concierto.setAforo(aforo);
+        conciertoService.modifyConcierto(id, concierto);
+        logger.info("Fin modificado aforo del concierto");
+        return new ResponseEntity<>(concierto, HttpStatus.OK);
+    }
+
+
+
 
 
     //Excepciones en caso de no encontrar el elemento

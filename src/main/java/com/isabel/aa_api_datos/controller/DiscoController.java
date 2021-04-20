@@ -1,7 +1,9 @@
 package com.isabel.aa_api_datos.controller;
 
+import com.isabel.aa_api_datos.domain.Concierto;
 import com.isabel.aa_api_datos.domain.Disco;
 import com.isabel.aa_api_datos.domain.dto.DiscoDTO;
+import com.isabel.aa_api_datos.exception.ConciertoNotFoundException;
 import com.isabel.aa_api_datos.exception.DiscoNotFoundException;
 import com.isabel.aa_api_datos.service.DiscoService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -18,6 +20,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.Set;
 
 @RestController
@@ -89,6 +93,27 @@ public class DiscoController {
         logger.info("Eliminado disco");
         return new ResponseEntity<>(Response.noErrorResponse(), HttpStatus.OK);
     }
+
+
+    @Operation(summary = "Modifica si ha sido premiado")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Se modifica si ha sido premiado", content = @Content(schema = @Schema(implementation = Response.class))),
+            @ApiResponse(responseCode = "404", description = "El disco no existe", content = @Content(schema = @Schema(implementation = Response.class)))
+    })
+    //Modificar la fecha de lanzamiento del disco
+    @PatchMapping(value = "/discos/{id}/change-premiado", produces = "application/json")
+    public ResponseEntity<Disco> cambiaDisco(@PathVariable long id, @RequestBody boolean premiado){
+        logger.info("Inicio modificar si el disco ha sido premiado");
+        Disco disco = discoService.findDiscoById(id)
+                .orElseThrow(() -> new DiscoNotFoundException(id));
+        disco.setPremiado(premiado);
+        discoService.modifyDisco(id, disco);
+        logger.info("Fin modificado premiado");
+        return new ResponseEntity<>(disco, HttpStatus.OK);
+    }
+
+
+
 
 
 

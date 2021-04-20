@@ -439,3 +439,239 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2021-04-20 12:43:17,244 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
 2021-04-20 12:43:17,275 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
 2021-04-20 12:43:17,275 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.845 seconds (JVM running for 4.209)
+2021-04-20 12:46:01,592 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 9376 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 12:46:01,592 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 12:46:02,225 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 12:46:02,286 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2021-04-20 12:46:02,871 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 12:46:02,879 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 12:46:02,879 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 12:46:02,879 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 12:46:02,972 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 12:46:02,972 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1342 ms
+2021-04-20 12:46:03,114 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 12:46:03,154 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 12:46:03,245 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 12:46:03,315 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 12:46:03,445 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 12:46:03,465 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 12:46:03,972 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 12:46:03,988 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 12:46:04,373 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 12:46:04,421 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 12:46:04,921 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 12:46:04,943 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 12:46:04,943 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.745 seconds (JVM running for 4.137)
+2021-04-20 12:46:08,106 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 12:46:08,106 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-20 12:46:08,106 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 0 ms
+2021-04-20 12:46:08,845 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8082-exec-5] Init duration for springdoc-openapi is: 585 ms
+2021-04-20 19:07:35,158 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 10736 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:07:35,165 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:07:35,903 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:07:35,971 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:07:36,628 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:07:36,638 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:07:36,639 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:07:36,639 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:07:36,723 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:07:36,723 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1512 ms
+2021-04-20 19:07:36,889 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:07:36,940 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:07:37,061 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:07:37,146 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:07:37,317 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:07:37,345 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:07:38,102 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:07:38,109 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:07:38,491 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:07:38,545 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:07:39,117 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:07:39,136 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:07:39,142 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 4.419 seconds (JVM running for 4.825)
+2021-04-20 19:07:44,800 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:07:44,801 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:07:44,802 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 0 ms
+2021-04-20 19:07:45,451 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8082-exec-4] Init duration for springdoc-openapi is: 579 ms
+2021-04-20 19:08:15,880 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Inicio modificar titulo de la canción
+2021-04-20 19:08:15,966 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Eliminada canción
+2021-04-20 19:09:38,384 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-7] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.isabel.aa_api_datos.domain.Cancion> com.isabel.aa_api_datos.controller.CancionController.cambiaCancion(long,java.lang.String)]
+2021-04-20 19:09:52,163 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-9] Inicio getCanciones
+2021-04-20 19:09:52,263 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-9] Fin getCanciones
+2021-04-20 19:10:22,675 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-10] Inicio modificar titulo de la canción
+2021-04-20 19:10:22,680 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-10] Eliminada canción
+2021-04-20 19:10:39,051 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-1] Inicio modificar titulo de la canción
+2021-04-20 19:10:39,057 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-1] Eliminada canción
+2021-04-20 19:11:17,273 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-2] Inicio modificar titulo de la canción
+2021-04-20 19:11:17,277 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-2] Eliminada canción
+2021-04-20 19:11:26,528 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-4] Inicio modificar titulo de la canción
+2021-04-20 19:11:26,532 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-4] Eliminada canción
+2021-04-20 19:11:45,753 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 18804 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:11:45,756 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:11:46,356 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:11:46,407 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:11:46,984 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:11:46,992 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:11:46,992 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:11:46,993 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:11:47,073 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:11:47,073 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1275 ms
+2021-04-20 19:11:47,216 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:11:47,254 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:11:47,347 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:11:47,417 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:11:47,548 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:11:47,569 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:11:48,079 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:11:48,085 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:11:48,464 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:11:48,521 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:11:48,995 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:11:49,014 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:11:49,021 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.645 seconds (JVM running for 4.007)
+2021-04-20 19:11:55,678 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:11:55,679 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:11:55,680 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed initialization in 1 ms
+2021-04-20 19:11:55,704 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-2] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'titulo' is not present]
+2021-04-20 19:12:16,194 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-6] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'titulo' is not present]
+2021-04-20 19:14:13,481 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 9432 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:14:13,484 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:14:14,124 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:14:14,179 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:14:14,769 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:14:14,777 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:14:14,778 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:14:14,778 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:14:14,856 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:14:14,857 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1329 ms
+2021-04-20 19:14:14,994 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:14:15,032 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:14:15,123 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:14:15,196 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:14:15,331 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:14:15,353 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:14:15,879 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:14:15,885 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:14:16,265 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:14:16,320 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:14:16,868 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:14:16,884 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:14:16,891 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.791 seconds (JVM running for 4.147)
+2021-04-20 19:14:22,283 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:14:22,285 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:14:22,286 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2021-04-20 19:14:23,082 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8082-exec-6] Init duration for springdoc-openapi is: 633 ms
+2021-04-20 19:14:50,867 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-7] Inicio modificar titulo de la canción
+2021-04-20 19:14:50,927 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-7] Fin modificado título de canción
+2021-04-20 19:15:17,622 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-9] Inicio modificar titulo de la canción
+2021-04-20 19:15:17,629 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-9] Fin modificado título de canción
+2021-04-20 19:16:07,763 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-1] Inicio modificar titulo de la canción
+2021-04-20 19:16:07,769 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-1] Fin modificado título de canción
+2021-04-20 19:16:14,067 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-2] Inicio modificar titulo de la canción
+2021-04-20 19:16:14,075 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-2] Fin modificado título de canción
+2021-04-20 19:16:49,683 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Inicio modificar titulo de la canción
+2021-04-20 19:16:49,689 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Fin modificado título de canción
+2021-04-20 19:16:59,364 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-4] Inicio modificar titulo de la canción
+2021-04-20 19:16:59,370 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-4] Fin modificado título de canción
+2021-04-20 19:26:43,275 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 8556 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:26:43,279 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:26:43,926 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:26:43,979 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:26:44,566 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:26:44,575 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:26:44,576 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:26:44,576 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:26:44,657 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:26:44,657 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1333 ms
+2021-04-20 19:26:44,799 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:26:44,838 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:26:44,933 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:26:45,006 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:26:45,135 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:26:45,155 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:26:45,698 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:26:45,705 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:26:46,101 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:26:46,157 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:26:46,725 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:26:46,743 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:26:46,749 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.905 seconds (JVM running for 4.288)
+2021-04-20 19:28:16,501 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:28:16,501 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:28:16,502 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed initialization in 1 ms
+2021-04-20 19:28:16,538 INFO com.isabel.aa_api_datos.controller.CantanteController [http-nio-8082-exec-2] Inicio modificar años activo del cantante
+2021-04-20 19:28:16,601 INFO com.isabel.aa_api_datos.controller.CantanteController [http-nio-8082-exec-2] Fin modificado años activo cantante
+2021-04-20 19:29:06,814 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Inicio modificar titulo de la canción
+2021-04-20 19:29:06,825 INFO com.isabel.aa_api_datos.controller.CancionController [http-nio-8082-exec-3] Fin modificado título de canción
+2021-04-20 19:33:49,966 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 11760 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:33:49,968 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:33:50,570 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:33:50,624 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:33:51,210 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:33:51,218 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:33:51,218 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:33:51,218 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:33:51,298 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:33:51,298 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1292 ms
+2021-04-20 19:33:51,440 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:33:51,477 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:33:51,570 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:33:51,640 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:33:51,771 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:33:51,792 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:33:52,315 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:33:52,321 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:33:52,709 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:33:52,764 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:33:53,259 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:33:53,276 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:33:53,284 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.694 seconds (JVM running for 4.045)
+2021-04-20 19:35:25,290 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:35:25,291 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:35:25,292 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-2] Completed initialization in 1 ms
+2021-04-20 19:35:25,310 INFO com.isabel.aa_api_datos.controller.ConciertoController [http-nio-8082-exec-2] Inicio getConciertos
+2021-04-20 19:35:25,449 INFO com.isabel.aa_api_datos.controller.ConciertoController [http-nio-8082-exec-2] Fin getConciertos
+2021-04-20 19:35:58,075 INFO com.isabel.aa_api_datos.controller.ConciertoController [http-nio-8082-exec-3] Inicio modificar aforo del concierto
+2021-04-20 19:35:58,102 INFO com.isabel.aa_api_datos.controller.ConciertoController [http-nio-8082-exec-3] Fin modificado aforo concierto
+2021-04-20 19:36:24,214 INFO com.isabel.aa_api_datos.controller.ConciertoController [http-nio-8082-exec-5] Inicio modificar aforo del concierto
+2021-04-20 19:36:24,220 INFO com.isabel.aa_api_datos.controller.ConciertoController [http-nio-8082-exec-5] Fin modificado aforo concierto
+2021-04-20 19:44:18,310 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 10804 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:44:18,313 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:44:18,926 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:44:18,978 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:44:19,582 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:44:19,590 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:44:19,591 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:44:19,591 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:44:19,671 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:44:19,671 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1317 ms
+2021-04-20 19:44:19,812 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:44:19,854 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:44:19,947 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:44:20,018 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:44:20,165 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:44:20,191 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:44:20,790 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:44:20,796 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:44:21,200 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:44:21,256 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:44:21,758 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:44:21,775 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:44:21,781 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.847 seconds (JVM running for 4.207)
+2021-04-20 19:44:30,352 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:44:30,353 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:44:30,354 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2021-04-20 19:44:30,391 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-1] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('-' (code 45)): Expected space separating root-level values; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)): Expected space separating root-level values
+ at [Source: (PushbackInputStream); line: 1, column: 4]]
+2021-04-20 19:45:41,281 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-3] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('-' (code 45)): Expected space separating root-level values; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)): Expected space separating root-level values
+ at [Source: (PushbackInputStream); line: 1, column: 4]]
+2021-04-20 19:45:48,209 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-6] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('-' (code 45)): Expected space separating root-level values; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('-' (code 45)): Expected space separating root-level values
+ at [Source: (PushbackInputStream); line: 1, column: 6]]
+2021-04-20 19:46:16,517 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-8] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
+2021-04-20 19:46:27,727 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-10] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
+2021-04-20 19:46:40,338 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-2] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "02-02-2021": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '02-02-2021' could not be parsed at index 0; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDate` from String "02-02-2021": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '02-02-2021' could not be parsed at index 0
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2021-04-20 19:47:06,137 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-3] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
