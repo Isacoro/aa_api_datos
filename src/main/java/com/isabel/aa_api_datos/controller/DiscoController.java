@@ -100,7 +100,7 @@ public class DiscoController {
             @ApiResponse(responseCode = "200", description = "Se modifica si ha sido premiado", content = @Content(schema = @Schema(implementation = Response.class))),
             @ApiResponse(responseCode = "404", description = "El disco no existe", content = @Content(schema = @Schema(implementation = Response.class)))
     })
-    //Modificar la fecha de lanzamiento del disco
+    //Modificar si el disco ha sido premiado
     @PatchMapping(value = "/discos/{id}/change-premiado", produces = "application/json")
     public ResponseEntity<Disco> cambiaDisco(@PathVariable long id, @RequestBody boolean premiado){
         logger.info("Inicio modificar si el disco ha sido premiado");
@@ -111,9 +111,6 @@ public class DiscoController {
         logger.info("Fin modificado premiado");
         return new ResponseEntity<>(disco, HttpStatus.OK);
     }
-
-
-
 
 
 

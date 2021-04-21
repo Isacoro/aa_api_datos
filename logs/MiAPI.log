@@ -675,3 +675,31 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
  at [Source: (PushbackInputStream); line: 1, column: 1]]
 2021-04-20 19:47:06,137 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8082-exec-3] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
  at [Source: (PushbackInputStream); line: 1, column: 2]]
+2021-04-20 19:49:45,087 INFO org.springframework.boot.StartupInfoLogger [main] Starting AaApiDatosApplication using Java 11.0.8 on DESKTOP-LMTAHC5 with PID 18928 (D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos\target\classes started by Isabel in D:\CURSO\tareas_IntelliJ_AccesoDatos\aa_api_datos)
+2021-04-20 19:49:45,090 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-20 19:49:45,701 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 19:49:45,758 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2021-04-20 19:49:46,361 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2021-04-20 19:49:46,370 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:49:46,370 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-20 19:49:46,370 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 19:49:46,461 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-20 19:49:46,461 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1332 ms
+2021-04-20 19:49:46,604 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 19:49:46,641 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 19:49:46,739 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 19:49:46,810 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-20 19:49:46,940 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-20 19:49:46,960 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-20 19:49:47,477 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 19:49:47,483 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 19:49:47,877 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 19:49:47,934 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 19:49:48,460 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2021-04-20 19:49:48,478 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path ''
+2021-04-20 19:49:48,484 INFO org.springframework.boot.StartupInfoLogger [main] Started AaApiDatosApplication in 3.793 seconds (JVM running for 4.141)
+2021-04-20 19:49:58,182 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 19:49:58,183 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-20 19:49:58,184 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2021-04-20 19:49:58,222 INFO com.isabel.aa_api_datos.controller.DiscoController [http-nio-8082-exec-1] Inicio modificar si el disco ha sido premiado
+2021-04-20 19:49:58,293 INFO com.isabel.aa_api_datos.controller.DiscoController [http-nio-8082-exec-1] Fin modificado premiado
